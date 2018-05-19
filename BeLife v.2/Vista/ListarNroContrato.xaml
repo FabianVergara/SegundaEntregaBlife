@@ -1,0 +1,26 @@
+﻿<Window x:Class="Vista.ListarNroContrato"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vista"
+        mc:Ignorable="d"
+        Title="Aseguradora &quot;BE LIFE&quot;" Height="358.965" Width="519.794" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    <Grid>
+        <GroupBox x:Name="groupBox" Header="Filtro por Nro. de Contrato" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="291" Width="481">
+            <Grid Margin="0,5,-2,-4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="button" Grid.ColumnSpan="2" Content="Filtrar" HorizontalAlignment="Left" Margin="268,43,0,0" VerticalAlignment="Top" Width="76" Click="button_Click"/>
+                <Label x:Name="lblNroContrato" Grid.ColumnSpan="2" Content="Nro. de Contrato:" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtNroContrato" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="117,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <DataGrid x:Name="dtNroContrato" Grid.ColumnSpan="2" Margin="29,97,43,0" VerticalAlignment="Top" Height="105" IsReadOnly="True"/>
+                <Button x:Name="btnlimpiar" Grid.ColumnSpan="2" Content="Limpiar" HorizontalAlignment="Left" Margin="353,220,0,0" VerticalAlignment="Top" Width="75" Click="btnlimpiar_Click"/>
+                <Image x:Name="image" Height="49" Margin="368,26,43,0" VerticalAlignment="Top" Source="ContractSearch.png" Grid.ColumnSpan="2"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="Vista.MenuCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vista"
+        mc:Ignorable="d"
+        Title="Aseguradora &quot;BE LIFE&quot;" Height="350" Width="525" ResizeMode="NoResize" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    <Grid Height="348" VerticalAlignment="Bottom" Margin="0,0,9,3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="426*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox x:Name="groupBox" Header="Clientes" Margin="10,10,0,10" Grid.ColumnSpan="4">
+            <Grid Margin="0,10,-2,-12">
+                <Image x:Name="ClientAdd_png" Margin="26,72,368,160" Source="ClientAdd.png" Stretch="Fill"/>
+                <Image x:Name="ClientDelete_png" Margin="31,171,363,61" Source="ClientDelete.png" Stretch="Fill"/>
+                <Image x:Name="ClientSearch_png" Margin="256,85,139,0" Source="ClientSearch.png" Stretch="Fill" Height="76" VerticalAlignment="Top"/>
+                <Image x:Name="ClientUpdate_png" Margin="256,184,139,48" Source="ClientUpdate.png" Stretch="Fill"/>
+                <Image x:Name="DataSearch_png" Margin="384,133,24,119" Source="DataSearch.png" Stretch="Fill"/>
+
+                <ComboBox x:Name="cboFiltro" HorizontalAlignment="Left" Margin="343,207,0,0" VerticalAlignment="Top" Width="112" SelectedIndex="0">
+                    <ComboBoxItem Content="Seleccione Filtro"/>
+                    <ComboBoxItem Content="Por Rut"/>
+                    <ComboBoxItem Content="Por Sexo"/>
+                    <ComboBoxItem Content="Por Estado Civil"/>
+                </ComboBox>
+                <Button x:Name="btnFiltrar" Content="Filtrar" HorizontalAlignment="Left" Margin="356,238,0,0" VerticalAlignment="Top" Width="75" Click="btnFiltrar_Click" />
+                <Button x:Name="button2" Content="Eliminar" HorizontalAlignment="Left" Margin="37,249,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
+                <Button x:Name="button3" Content="Actualizar" HorizontalAlignment="Left" Margin="245,265,0,0" VerticalAlignment="Top" Width="75" Click="button3_Click"/>
+                <Label x:Name="lblFaltaFiltro" Content="" HorizontalAlignment="Left" Margin="356,267,0,0" VerticalAlignment="Top" FontSize="9" Width="99"/>
+                <Button x:Name="button" Content="Registrar" HorizontalAlignment="Left" Margin="32,137,0,0" VerticalAlignment="Top" Width="75" Click="button_Click" Height="31" BorderBrush="#FF994C4C">
+                    <Button.OpacityMask>
+                        <ImageBrush ImageSource="ClientAdd.png"/>
+                    </Button.OpacityMask>
+                </Button>
+                <Button x:Name="button1" Content="Buscar" HorizontalAlignment="Left" Margin="245,157,0,0" VerticalAlignment="Top" Width="75" Click="btnBuscar_Click_1"/>
+
+            </Grid>
+        </GroupBox>
+        <Image x:Name="Clientes_png" Margin="296,38,38,226" Source="Clientes.png" Stretch="Fill" Grid.Column="3"/>
+        <Image x:Name="Logo_BeLife_png" Margin="18.189,38,216,249" Source="Logo BeLife.png" Stretch="Fill" Grid.ColumnSpan="3" Grid.Column="1"/>
+
+    </Grid>
+</Window>

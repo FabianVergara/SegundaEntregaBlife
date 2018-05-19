@@ -1,0 +1,35 @@
+﻿<Window x:Class="Vista.MenuContrato"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vista"
+        mc:Ignorable="d"
+        Title="Aseguradora &quot;BE LIFE&quot;" Height="381.203" Width="518.798" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Left" Width="454">
+        <GroupBox x:Name="groupBox" Header="Contratos" Margin="10,10,-48,0" Height="333" VerticalAlignment="Top">
+            <Grid Margin="0,0,-2,-12">
+                <Image x:Name="Contratos_png" Margin="355,24,57,235" Source="Contratos.png" Stretch="Fill"/>
+                <Image x:Name="ContractAdd_png"  Margin="41,107,356,148" Source="ContractAdd.png" Stretch="Fill"/>
+                <Image x:Name="ContractSearch_png" Margin="233,107,162,148" Source="ContractSearch.png" Stretch="Fill"/>
+                <Image x:Name="ContractDelete_png" Margin="41,210,356,45" Source="ContractDelete.png" Stretch="Fill"/>
+                <Image x:Name="ContractUpdate_png" Margin="233,210,162,45" Source="ContractUpdate.png" Stretch="Fill"/>
+                <Button x:Name="button" Content="Crear" HorizontalAlignment="Left" Margin="51,180,0,0" VerticalAlignment="Top" Width="75" Click="btnCrear_Click"/>
+                <Button x:Name="btn_terminar" Content="Terminar" HorizontalAlignment="Left" Margin="51,284,0,0" VerticalAlignment="Top" Width="75" Click="btnTerminar_Click"/>
+                <Button x:Name="btn_buscarmenu" Content="Buscar" HorizontalAlignment="Left" Margin="245,180,0,0" VerticalAlignment="Top" Width="75" Click="btnBuscar_Click"/>
+                <Button x:Name="btn_actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="245,284,0,0" VerticalAlignment="Top" Width="75" Click="btnActualizar_Click"/>
+                <Image x:Name="DataSearch_png" Margin="389,145,32,132" Source="DataSearch.png" Stretch="Fill"/>
+                <ComboBox x:Name="cboFiltro" HorizontalAlignment="Left" Margin="355,196,0,0" VerticalAlignment="Top" Width="117" SelectedIndex="0" SelectionChanged="cboFiltro_SelectionChanged">
+                    <ComboBoxItem Content="Seleccione Filtro"/>
+                    <ComboBoxItem Content="Por Nro. Contrato"/>
+                    <ComboBoxItem Content="Por Rut"/>
+                    <ComboBoxItem Content="Por Nro. de Poliza"/>
+                </ComboBox>
+                <Label x:Name="lblFaltaFiltro" Content="" HorizontalAlignment="Left" Margin="333,256,0,0" VerticalAlignment="Top" FontSize="9" Width="139"/>
+            </Grid>
+        </GroupBox>
+        <Image x:Name="Logo_BeLife_png" Margin="29,38,173,259" Source="Logo BeLife.png" Stretch="Fill"/>
+        <Button x:Name="btnFiltrar_Click" Content="Filtrar" HorizontalAlignment="Left" Margin="397,256,-18,0" VerticalAlignment="Top" Width="75" Click="cboFiltro_Click" />
+
+    </Grid>
+</Window>
